@@ -22,7 +22,7 @@
     align-items: center;
 }
 .logo img {
-    width: 170px;
+    width: 150px;
     height: 75px;
 }
 .logo h1 span {
@@ -224,13 +224,15 @@
 .product .product-img {
     overflow: hidden;
     margin-bottom: 16px;
+    border-radius: 6px;
 }
 .product .product-img img {
     width: 100%;
     transition: 0.5s all;
+    border-radius: 6px;
 }
 .product:hover .product-img img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .product h3 {
     text-transform: capitalize;
@@ -454,8 +456,12 @@
 
 /*--------(Max Width 540px)-------*/
 @media (max-width: 540px) {
-    .logo h1 {
-        font-size: 25px;
+    .header-area {
+        padding: 0 0;
+    }
+    .logo img {
+        width: 100px;
+        height: auto;
     }
     .cart-item li,
     .menu-toggle i {
@@ -465,9 +471,19 @@
     .home-content h1 {
         font-size: 30px;
     }
+    .home-img {
+        margin-bottom: 30px;
+        padding: 0 30px
+    }
+    .section-info {
+        margin-bottom: 30px;
+    }
     .brand-row {
         grid-template-columns: repeat(2,1fr);
-        grid-gap: 12px;
+        grid-gap: 34px 12px;
+    }
+    .products-area {
+        padding: 50px 0;
     }
     .products-row {
         grid-template-columns: 1fr;
